@@ -1,3 +1,7 @@
 <h1>Picture Details ID #<%= @id %></h1>
 
-<%= @picture.inspect %>
+<div>
+  <img src="<%= @picture.source %>" width="480">
+</div>
+
+<p><%= @picture.caption %></p>
