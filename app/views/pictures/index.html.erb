@@ -1,3 +1,12 @@
 <h1>List of Pictures</h1>
 
-<%= @list_of_pictures.inspect %>
+<ul>
+  <% @list_of_pictures.each do |pic| %>
+    <li>
+      <div>
+        <img src="<%= pic.source %>" width="200">
+      </div>
+      <p><%= pic.caption %></p>
+    </li>
+  <% end %>
+</ul>
